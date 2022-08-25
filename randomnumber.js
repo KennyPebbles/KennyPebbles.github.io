@@ -20,26 +20,36 @@ function clicked() {
     console.log("numsok", numsok)
 
 
-    var wordsok
-    
+    var wordsok = false
+    if (userAsk1 == 'dec' || userAsk1 == 'int') { wordsok = true }
+    console.log("wordsok", wordsok)
+
+
+
+
     // To display result??
     var divobj = document.getElementById('results');
     divobj.style.display = 'block';
     divobj.innerHTML = ""
-    // To calculate result
-    for (let k = 0; k < generate2; k++) {
-        if (userAsk1 == 'dec') {
-            result = (Math.random() * insertNumber2)
-        } else if (userAsk1 == 'int') {
-            result = Math.floor(Math.random() * insertNumber2)
+
+    if (wordsok == true && numsok == true) {
+        // To calculate result
+        for (let k = 0; k < generate2; k++) {
+            if (userAsk1 == 'dec') {
+                result = (Math.random() * insertNumber2)
+            } else if (userAsk1 == 'int') {
+                result = Math.floor(Math.random() * insertNumber2)
+
+            }
+            console.log(result)
+
+            divobj.innerHTML += result + "<br>"
 
         }
-        console.log(result)
-        // To display result again???
-
-
-        divobj.innerHTML += result + "<br>"
-
     }
+    else { divobj.innerHTML = "You didn't enter a number or the right word!!!" }
+
+       
+    
 }
 
