@@ -7,8 +7,8 @@ function clicked1() {
     console.log("stringnum:", stringnum)
     console.log("stringdivisor", stringdivisor)
     // Turn string into number 
-    const realnum = parseInt(stringnum, 10);
-    const realdivisor = parseInt(stringdivisor, 10)
+    const realnum = parseFloat(stringnum, 10);
+    const realdivisor = parseFloat(stringdivisor, 10)
 
     console.log("realnum:", realnum)
     console.log("realdivisor:", realdivisor)
@@ -45,8 +45,8 @@ function clicked2() {
     console.log("stringper:", stringper)
     console.log("stringnum2:", stringnum2)
     //Turn String Into Number
-    const realper = parseInt(stringper, 10)
-    const realnum2 = parseInt(stringnum2, 10)
+    const realper = parseFloat(stringper, 10)
+    const realnum2 = parseFloat(stringnum2, 10)
 
     console.log("realper:", realper)
     console.log("realnum2:", realnum2)
@@ -84,8 +84,8 @@ function clicked3() {
     console.log("basestring:", basestring)
 
     //Turn String Into Number
-    const initialnum = parseInt(calcstring, 10);
-    const finalnum = parseInt(basestring, 10)
+    const initialnum = parseFloat(calcstring, 10);
+    const finalnum = parseFloat(basestring, 10)
 
     console.log("initialnum:", initialnum)
     console.log("finalnum:", finalnum)

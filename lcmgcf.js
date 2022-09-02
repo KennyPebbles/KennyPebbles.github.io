@@ -5,7 +5,7 @@ function clicked() {
     // To convert array of strings into a array of numbers
     const astring = datasetString.split(',');
     const anumber = astring.map(element => {
-        return parseInt(element, 10);
+        return parseFloat(element, 10);
     });
 
     console.log(anumber)

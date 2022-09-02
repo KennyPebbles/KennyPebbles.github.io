@@ -8,7 +8,7 @@ function clicked() {
     console.log("insertNumber1", insertNumber1)
     console.log("generate1", generate1)
     // Turn String into Number
-    const insertNumber2 = parseInt(insertNumber1, 10);
+    const insertNumber2 = parseFloat(insertNumber1, 10);
     const generate2 = parseInt(generate1, 10)
 
     console.log("insertNumber2:", insertNumber2)

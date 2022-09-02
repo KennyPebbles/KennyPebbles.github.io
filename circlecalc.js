@@ -4,7 +4,7 @@ function clicked() {
 
     console.log("string-diameter:", stringdia)
     // To convert string into number
-    const numberdia = parseInt(stringdia, 10);
+    const numberdia = parseFloat(stringdia, 10);
 
     console.log("numberdia:", numberdia)
 

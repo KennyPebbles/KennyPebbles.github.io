@@ -6,7 +6,7 @@ function clicked(){
     console.log("stringexp:", stringexp)
     
     //Turns string into number 
-    const realnums = parseInt(stringnums,10)
+    const realnums = parseFloat(stringnums,10)
     const realexp = parseInt(stringexp,10)
     console.log("realnums", realnums)
     console.log("realexp:", realexp)

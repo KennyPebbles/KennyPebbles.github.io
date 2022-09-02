@@ -168,7 +168,7 @@ function clicked() {
     const arrOfStr = datasetString.split(',');
 
     const arrOfNum = arrOfStr.map(element => {
-        return parseInt(element, 10);
+        return parseFloat(element, 10);
     });
 
     console.log("arrOfNum:", arrOfNum);
